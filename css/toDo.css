@@ -2,6 +2,7 @@ body {
     background: linear-gradient(to right, aqua ,  blueviolet, teal);
     text-align: center;
     font-family: 'Cute Font';
+    /* list-style-position: inside; */
 }
 
 h1 {
@@ -73,6 +74,35 @@ p {
 
 #textInput {
     height: 38px;
+}
+
+/* Styles for the UL and LI */
+
+ul {
+    font-size: 30pt;
+    list-style-position: inside;
+    text-align: left;
+    margin-top: 20px;
+}
+
+li {
+    list-style: none;
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+}
+
+li:hover {
+    background-color: green;
+
+}
+
+/* Styles for when a list item is marked DONE */
+
+.done {
+    background-color: cadetblue !important;
 }
 
 
