@@ -106,4 +106,15 @@ li:hover {
 }
 
 
+li > button {
+    background: none;
+    float: right;
+    border: none;
+    color: white;
+}
+
+.delete {
+    display: none;
+}
+
 

@@ -32,7 +32,18 @@ function createListElement() {
         li.classList.toggle('done');
     }
         li.addEventListener('click', markDone);
-    
+
+        var deleteButton = document.createElement('button');
+        deleteButton.innerText = 'X';
+        //Add a button as a child of the li
+        li.appendChild(deleteButton); 
+
+
+        //This function will be called whenever the delete button is called
+        function deleteListItem () {
+            li.classList.add('delete');
+        }
+    deleteButton.addEventListener('click', deleteListItem);
 }
 
 function createListItemSubmitButton() {
